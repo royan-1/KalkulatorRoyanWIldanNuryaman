@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spPilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/operator_array" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil akan ditampilkan di sini"
+        android:textSize="18sp"
+        android:paddingTop="10dp" />
+
+</LinearLayout>
